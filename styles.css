@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo {
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.banner {
+    background-color: #002244;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.banner-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.banner-content h2 {
+    margin: 0.5rem 0;
+}
+
+.registration {
+    background-color: #e7f3ff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.register-link {
+    display: inline-block;
+    background-color: #003366;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.details {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.course-info {
+    padding: 2rem;
+    background-color: #fff;
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.course-info h2, .course-info h3 {
+    color: #003366;
+}
+
+.course-info p {
+    margin-bottom: 1rem;
+}
