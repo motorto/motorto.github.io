@@ -66,10 +66,16 @@ header {
     border-radius: 5px;
 }
 
-.course-info h2, .course-info h3 {
+.course-info h2,
+.course-info h3 {
     color: #003366;
 }
 
 .course-info p {
     margin-bottom: 1rem;
+}
+
+.translucent {
+    opacity: 0.5;
+    text-align: center;
 }
