@@ -1,3 +1,26 @@
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Dropdown Styling Fix */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -11,6 +34,7 @@
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    margin: 0 10px;  /* Adds spacing between other nav elements */
 }
 
 .dropbtn:hover {
@@ -43,9 +67,14 @@
     background-color: #555;
 }
 
-/* Show the dropdown on hover */
+/* Show the dropdown when hovering over the dropdown button */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* Align the drop button with other links in the nav bar */
+nav .dropdown {
+    margin: 0 10px;
 }
 
 /* Additional responsiveness */
@@ -57,4 +86,9 @@
     .dropdown-content {
         min-width: 160px;
     }
+
+    nav {
+        flex-direction: column;
+    }
 }
+
