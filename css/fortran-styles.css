@@ -1,9 +1,43 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #563a72;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 90%; /* Increase the width percentage */
+    max-width: 1200px; /* Set a maximum width to avoid it being too large on bigger screens */
+    margin: 0 auto;
+    display: block;
+    height: auto; /* Ensure the aspect ratio is maintained */
+}
+
+
 /* Banner Styling */
 .banner {
-    background-color: #145a32;  /* Darker green background for the banner */
+    background-color: #3e2854;
     color: white;
     padding: 3rem 0;
     text-align: center;
+}
+
+.banner-content {
+    max-width: 800px;
+    margin: auto;
 }
 
 .banner-content h2 {
@@ -16,32 +50,7 @@
     font-size: 1.2rem;
 }
 
-/* Green Button Styling (keep this as it is) */
-.fortran-download-links {
-    display: flex;
-    flex-wrap: wrap;  /* Allow wrapping on smaller screens */
-    justify-content: center;
-    gap: 20px;  /* Space between buttons */
-    margin-bottom: 20px;
-}
-
-.fortran-download-link {
-    display: inline-block;
-    background-color: #27ae60;  /* Keep this lighter green for buttons */
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    text-align: center;
-    min-width: 150px;  /* Ensure all buttons have a consistent minimum width */
-}
-
-.fortran-download-link:hover {
-    background-color: #2ecc71;  /* Lighter green on hover */
-}
-
-/* Course Details Section */
+/* Details Section */
 .details .container {
     max-width: 900px;
     margin: auto;
@@ -73,7 +82,7 @@
 }
 
 .course-info h2 {
-    color: #145a32;  /* Darker green for the headings */
+    color: #563a72;
     margin-bottom: 15px;
     font-size: 2rem;
 }
@@ -84,18 +93,62 @@
     line-height: 1.8;
 }
 
+/* Download Links Container */
+.download-links {
+    display: flex;
+    flex-wrap: wrap;  /* Allow wrapping on smaller screens */
+    justify-content: center;
+    gap: 20px;  /* Space between buttons */
+    margin-bottom: 20px;
+}
+
+/* Individual Button Styling */
+.download-link {
+    display: inline-block;
+    background-color: #3e2854;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    min-width: 150px;  /* Ensure all buttons have a consistent minimum width */
+}
+
+.download-link:hover {
+    background-color: #563a72;
+}
+
+/* For smaller screens, make the buttons stack */
+@media (max-width: 768px) {
+    .download-links {
+        flex-direction: column;  /* Stack the buttons vertically on small screens */
+    }
+}
+
+
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #145a32;  /* Darker green background for the footer */
+    background-color: #563a72;
     color: white;
     margin-top: 40px;
 }
 
-/* Responsive Button Layout for Small Screens */
+.translucent {
+    opacity: 0.5;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Spacing for Better Readability */
+.container h2, .container h3 {
+    margin-top: 30px;
+}
+
 @media (max-width: 768px) {
-    .fortran-download-links {
-        flex-direction: column;  /* Stack buttons vertically on small screens */
+    .logo {
+        width: 90%; /* Adjust width for smaller screens */
     }
 }
