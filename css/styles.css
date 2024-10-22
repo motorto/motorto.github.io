@@ -93,7 +93,16 @@ header {
     line-height: 1.8;
 }
 
-/* Download Links */
+/* Download Links Container */
+.download-links {
+    display: flex;
+    flex-wrap: wrap;  /* Allow wrapping on smaller screens */
+    justify-content: center;
+    gap: 20px;  /* Space between buttons */
+    margin-bottom: 20px;
+}
+
+/* Individual Button Styling */
 .download-link {
     display: inline-block;
     background-color: #3498db;
@@ -101,13 +110,22 @@ header {
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
-    margin-bottom: 15px;
     font-size: 1rem;
+    text-align: center;
+    min-width: 150px;  /* Ensure all buttons have a consistent minimum width */
 }
 
 .download-link:hover {
     background-color: #2980b9;
 }
+
+/* For smaller screens, make the buttons stack */
+@media (max-width: 768px) {
+    .download-links {
+        flex-direction: column;  /* Stack the buttons vertically on small screens */
+    }
+}
+
 
 /* Footer */
 footer {
